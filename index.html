@@ -6,12 +6,17 @@
     <title>ACP Concession Stand Inventory</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <style>
+<style>
 .highlight {
     background-color: yellow;
 }
 
-    </style>
+.myTable {
+	width: 100%;
+	max-width: 400px;
+}
+</style>
+
 </head>
 <body>
 
@@ -24,7 +29,7 @@
         Cash&nbsp;&nbsp;
         <input type="button" id="btnCalcCash" value="Calculate Cash" onclick="CalcCash()" />
     </h3>
-    <table>
+    <table class="myTable">
         <thead>
         <td>Denom</td>
         <td>Start</td>
@@ -79,7 +84,7 @@
     <h3>Inventory Track&nbsp;&nbsp;
         <input type="button" id="btnCalcInventory" value="Calculate Inventory" onclick="ReCalcAll()" />
     </h3>
-    <table>
+    <table class="myTable">
         <thead>
             <td>Product</td>
             <td>Start Units</td>
